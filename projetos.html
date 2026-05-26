@@ -66,28 +66,28 @@
             </div>
             <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
                 <div class="card">
-                    <h3>🐍 Transcrição + Python</h3>
-                    <p>Extrai mapas de montagem de transcrições Whisper via LLM local. Redução de 70% no tempo de decupagem.</p>
+                    <h3>🐍 Mapa de Cortes Automático</h3>
+                    <p>Recebe transcrição Whisper (JSON) e usa LLM local para extrair quem fala, quando cortar, e que tipo de insert usar — corte principal, reação, B-roll, overlay ou legenda.</p>
                     <a href="https://github.com/marcelopuschnick/transcricao-interviews" style="font-size: 0.85rem;">▶ Ver código</a>
                 </div>
                 <div class="card">
-                    <h3>🎬 Render Programática</h3>
-                    <p>Pipeline FCPXML ↔ YAML + renderização FFmpeg para séries institucionais em escala.</p>
+                    <h3>🎬 Conversão FCPXML ↔ YAML</h3>
+                    <p>Lê timeline do Resolve e exporta pra YAML legível. Permite editar a timeline por código e re-importar. Renderiza versões finais via FFmpeg sem abrir GUI.</p>
                     <a href="https://github.com/marcelopuschnick/render-programatica" style="font-size: 0.85rem;">▶ Ver código</a>
                 </div>
                 <div class="card">
-                    <h3>🧠 Agente de Edição Local</h3>
-                    <p>Extrai → valida → exporta EDL/OTIO multi-track com 2 LLMs locais. LGPD por design.</p>
+                    <h3>🧠 Pipeline de Edição Assistida</h3>
+                    <p>Transcrição → extração de cortes (Ollama) → validação por segundo LLM (nota + triagem APROVADO / REVISAR / REJEITADO) → exporta EDL/OTIO multi-track (entrevista, insert, overlay, legenda).</p>
                     <a href="https://github.com/marcelopuschnick/agente-cia-local" style="font-size: 0.85rem;">▶ Ver código</a>
                 </div>
                 <div class="card">
-                    <h3>📄 Autodoc Local</h3>
-                    <p>Documentação automática de projetos Python via AST + IA local. Watchdog incluído.</p>
+                    <h3>📄 Documentação Automática de Projetos</h3>
+                    <p>Varre projeto Python usando AST — lista funções, classes, complexidade e imports. Gera Markdown bilingue (PT/EN) e re-gera documentação sozinho quando o código muda.</p>
                     <a href="https://github.com/marcelopuschnick/autodoc-local" style="font-size: 0.85rem;">▶ Ver código</a>
                 </div>
                 <div class="card">
-                    <h3>🧬 Memória de Contexto</h3>
-                    <p>Memória persistente com busca por similaridade (TF-IDF) para LLMs locais. Zero cloud.</p>
+                    <h3>🧬 Memória Persistente para Agentes Locais</h3>
+                    <p>Sistema de memória JSON para agentes locais: armazena contexto entre sessões, recupera os trechos relevantes por similaridade de texto (TF-IDF) antes de cada nova interação com o modelo.</p>
                     <a href="https://github.com/marcelopuschnick/synthia-foundation" style="font-size: 0.85rem;">▶ Ver código</a>
                 </div>
             </div>
