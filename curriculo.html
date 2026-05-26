@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculo — Marcelo Puschnick</title>
+    <title>Currículo — Marcelo Puschnick</title>
     <style>
-        @media print {
-            body { margin: 0; padding: 0; }
-            .no-print { display: none; }
-        }
+        @media print { body { margin: 0; padding: 0; } .no-print { display: none; } }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Inter', sans-serif;
             font-size: 10.5pt;
             line-height: 1.5;
             color: #222;
@@ -20,123 +17,25 @@
             max-width: 210mm;
             margin: 0 auto;
         }
-        .header-main {
-            display: flex;
-            align-items: center;
-            gap: 1.25rem;
-            margin-bottom: 0.5rem;
-        }
-        .header-photo {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid #1a1a1a;
-        }
-        h1 {
-            font-size: 20pt;
-            font-weight: 700;
-            color: #1a1a1a;
-            margin-bottom: 0.25rem;
-            letter-spacing: -0.02em;
-        }
-        .header-line {
-            font-size: 9pt;
-            color: #555;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.75rem;
-            border-bottom: 1.5px solid #1a1a1a;
-        }
-        h2 {
-            font-size: 11pt;
-            font-weight: 700;
-            color: #1a1a1a;
-            margin-top: 1.25rem;
-            margin-bottom: 0.5rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 0.25rem;
-        }
-        .job {
-            margin-bottom: 0.75rem;
-        }
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 0.15rem;
-        }
-        .job-title {
-            font-weight: 600;
-            font-size: 10.5pt;
-            color: #1a1a1a;
-        }
-        .job-date {
-            font-size: 9pt;
-            color: #666;
-            font-family: monospace;
-            white-space: nowrap;
-        }
-        .job-company {
-            font-size: 9.5pt;
-            color: #444;
-            font-style: italic;
-            margin-bottom: 0.15rem;
-        }
-        .job-desc {
-            font-size: 9.5pt;
-            color: #444;
-            padding-left: 0;
-        }
-        .job-desc ul {
-            margin-left: 1rem;
-            padding-left: 0;
-        }
-        .job-desc li {
-            margin-bottom: 0.1rem;
-        }
-        .section-intro {
-            font-size: 9.5pt;
-            color: #333;
-            margin-bottom: 0.75rem;
-        }
-        .skills-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0.5rem;
-            font-size: 9pt;
-            color: #444;
-        }
-        .highlight {
-            font-weight: 600;
-        }
-        .no-print {
-            margin-top: 2rem;
-            padding: 1rem;
-            background: #f5f5f5;
-            border-radius: 4px;
-            text-align: center;
-        }
-        .no-print button {
-            padding: 0.5rem 1.5rem;
-            background: #1a1a1a;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 10pt;
-        }
-        .two-col {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-        }
+        .header-main { display: flex; align-items: center; gap: 1.25rem; margin-bottom: 0.5rem; }
+        .header-photo { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 2px solid #1a1a1a; }
+        h1 { font-size: 20pt; font-weight: 700; margin-bottom: 0.25rem; }
+        .header-line { font-size: 9pt; color: #555; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 1.5px solid #1a1a1a; }
+        h2 { font-size: 11pt; font-weight: 700; margin-top: 1rem; margin-bottom: 0.5rem; text-transform: uppercase; border-bottom: 1px solid #ddd; padding-bottom: 0.25rem; }
+        .job { margin-bottom: 0.75rem; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; }
+        .job-title { font-weight: 600; }
+        .job-date { font-size: 9pt; color: #666; font-family: monospace; }
+        .job-company { font-size: 9.5pt; color: #444; font-style: italic; margin-bottom: 0.15rem; }
+        .job-desc { font-size: 9.5pt; color: #444; padding-left: 0; }
+        .job-desc ul { margin-left: 1rem; }
+        .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; font-size: 9pt; }
+        .no-print { margin-top: 2rem; text-align: center; }
+        .no-print button { padding: 0.5rem 1.5rem; background: #1a1a1a; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
 <div class="header-main">
     <img src="assets/profile_photo.png" alt="Marcelo Puschnick" class="header-photo">
     <div>
@@ -149,267 +48,28 @@
 <div class="header-line" style="margin-top: 0.5rem;"></div>
 
 <h2>Resumo Profissional</h2>
-<p class="section-intro">
-    Comunicador institucional com <strong>23 anos de experiência</strong> em broadcast, Comunicação Interna e produção audiovisual. Formado em Comunicação Social com Habilitação em Rádio e TV (Oswaldo Cruz, 2003), iniciou a carreira via projeto de Comunicação Interna da Bosch Campinas em convenio empresa-universidade. Atuacao no departamento <strong>Rede Empresa</strong> da TV Cultura — braco institucional da emissora pública, prestador de servico para órgãos públicos federais (SEBRAE-SP — unidade Vergueiro, Secretaria da Educação, TJOFRAN). Cobertura da primeira visita presidencial de Lula a fabrica da Ford (29/05/2003, São Bernardo do Campo) para o programa Fome Zero — 225 toneladas de alimentos, 9 carretas para o Nordeste. Transmissao via satélite para Brasília. Experiência em campanha presidencial (Plinio Arruda Sampaio, 2010), produção cultural (Fashion TV, programa Lado H, 3 temporadas) e cobertura institucional para administração pública (TV Camara Campinas). Atuacao em escala digital (3.071 pecas, base de 1,2 milhão) e automacao local de workflows com Python, em conformidade com a LGPD. Finalista do Prêmio de Jornalismo FEAC — categoria cinegrafista. Certificação em Ciência de Dados (IE University, 2026).
-</p>
+<p>Comunicador institucional com 23 anos de experiência em broadcast, Comunicação Interna e produção audiovisual. Formado pela Oswaldo Cruz (2003), atuou no departamento Rede Empresa da TV Cultura, em projetos para órgãos públicos (SEBRAE-SP, Secretaria da Educação). Cobertura presidencial do programa Fome Zero. Experiência em campanha eleitoral (Plínio Arruda Sampaio, 2010), produção cultural (Fashion TV) e comunicação institucional na TV Câmara Campinas. Coordenou pós-produção em escala (3.071 peças, base de 1,2 milhão) e desenvolve automação local com Python e IA (Whisper), garantindo LGPD. Finalista do Prêmio FEAC (cinegrafista). Certificação em Ciência de Dados (IE University, 2026).</p>
 
 <h2>Experiência Profissional</h2>
+<div class="job"><div class="job-header"><span class="job-title">Produtor de Conteúdo Institucional e Automação</span><span class="job-date">2021 – presente</span></div><div class="job-company">Mariuzzo Mídia / Produção Contínua</div><div class="job-desc"><ul><li>Produção para grandes contas: Bosch, UPL, Mercado Livre, Sherwin-Williams, 3M, Henkel.</li><li>Coordenação de pós-produção em escala: 3.071 peças publicadas, base de 1,2 milhão de inscritos.</li><li>Automação local com Python (Whisper, FFmpeg, Remotion) – infraestrutura on‑premise, LGPD.</li><li>Em paralelo: marketing digital e gestão de tráfego para Tecarte (móveis, 2023-2025).</li></ul></div></div>
+<div class="job"><div class="job-header"><span class="job-title">Editor de VT e Direção de Imagens</span><span class="job-date">2019 – 2020</span></div><div class="job-company">TV Câmara Campinas / Rede Família / Band Campinas</div><div class="job-desc"><ul><li>Edição e finalização de matérias, boletins e artes. Direção de imagens do Jornal Diário (TV Câmara).</li><li>Montagem de programas eleitorais (Band – Eleições 2020). Criação de pacotes gráficos e vinhetas.</li></ul></div></div>
+<div class="job"><div class="job-header"><span class="job-title">Editor de VT e Direção de Imagens</span><span class="job-date">2012 – 2017</span></div><div class="job-company">TV PUC Campinas</div><div class="job-desc"><ul><li>Edição e finalização de programas, boletins e artes. Direção de imagens, coordenação de equipe.</li><li>Desenvolvimento de esquemas luminotécnicos e formatos audiovisuais.</li></ul></div></div>
+<div class="job"><div class="job-header"><span class="job-title">Cinegrafista / Editor</span><span class="job-date">2011 – 2012</span></div><div class="job-company">TV Século XXI – Valinhos (Núcleo EAD)</div><div class="job-desc"><ul><li>Gravação de aulas EAD, produção de cenário, iluminação, edição e finalização.</li></ul></div></div>
+<div class="job"><div class="job-header"><span class="job-title">Produtor</span><span class="job-date">2010</span></div><div class="job-company">MZ Filmes / Fashion TV (Lado H)</div><div class="job-desc"><ul><li>3 temporadas do programa Lado H (Gastão Moreira). Responsável por todas as etapas de produção.</li></ul></div></div>
+<div class="job"><div class="job-header"><span class="job-title">Editor de Pós-produção – Campanha Presidencial</span><span class="job-date">2010</span></div><div class="job-company">Traço Livre Comunicação (Plínio Arruda Sampaio)</div><div class="job-desc"><ul><li>Edição e finalização de programas eleitorais, peças publicitárias.</li></ul></div></div>
+<div class="job"><div class="job-header"><span class="job-title">Editor de Jornalismo</span><span class="job-date">2008 – 2010</span></div><div class="job-company">TV Costa Norte / TV Mais</div><div class="job-desc"><ul><li>Edição para emissora regional.</li></ul></div></div>
+<div class="job"><div class="job-header"><span class="job-title">Editor de Jornalismo e Direção de Imagens</span><span class="job-date">2003 – 2008</span></div><div class="job-company">TV PUC / TV Cultura (Rede Empresa)</div><div class="job-desc"><ul><li>Projetos para SEBRAE-SP, Secretaria da Educação, TJOFRAN. Cobertura da visita presidencial de Lula à Ford (Fome Zero). Finalista do Prêmio FEAC.</li></ul></div></div>
+<div class="job"><div class="job-header"><span class="job-title">Auxiliar de Laboratório</span><span class="job-date">2001 – 2003</span></div><div class="job-company">Faculdades Oswaldo Cruz</div><div class="job-desc"><ul><li>Montagem e operação de estúdios.</li></ul></div></div>
 
-<div class="job">
-    <div class="job-header">
-        <span class="job-title">Editor Senior e Automacao Local</span>
-        <span class="job-date">2023 — 2026</span>
-    </div>
-    <div class="job-company">Produção Audiovisual Contínua — Coordenação Técnica</div>
-    <div class="job-desc">
-        <ul>
-            <li>Coordenação técnica de pos-produção em escala: 3.071 pecas publicadas, base de 1,2 milhão de inscritos</li>
-            <li>Desenvolvimento de pipelines locais em Python para transcrição automatica (Whisper), processamento de mídia e workflows editoriais</li>
-            <li>Infraestrutura on-premise, sem dependencia de nuvem, em conformidade com a LGPD</li>
-            <li>Em paralelo (2023-2025): marketing digital e gestão de tráfego para Tecarte (móveis, Campinas)</li>
-        </ul>
-    </div>
-</div>
-
-<div class="job">
-    <div class="job-header">
-        <span class="job-title">Cinegrafista Freelancer</span>
-        <span class="job-date">2021 (abr — mai)</span>
-    </div>
-    <div class="job-company">Cha com Nozes Propaganda LTDA — Campinas, SP</div>
-    <div class="job-desc">
-        <ul>
-            <li>Operação de camera e iluminação em gravações de audio e video</li>
-            <li>Captação em internas e externas</li>
-            <li>Cobertura jornalistica, institucional e educacional</li>
-        </ul>
-    </div>
-</div>
-
-<div class="job">
-    <div class="job-header">
-        <span class="job-title">Filmmaker — Grandes Contas e Comunicação Institucional</span>
-        <span class="job-date">2021 — Presente</span>
-    </div>
-    <div class="job-company">Mariuzzo Mídia / Aristo Médica / Clínica de Infusão de Cetamina</div>
-    <div class="job-desc">
-        <ul>
-            <li>Operação de camera e iluminação em gravações de audio e video</li>
-            <li>Captação em internas e externas, edição, roteiro e arte</li>
-            <li>Cobertura jornalistica, institucional e educacional</li>
-            <li>Contas atendidas: Bosch, UPL, Mercado Livre, Sherwin-Williams, Caporossi</li>
-            <li><strong>Em paralelo:</strong> Comunicação institucional para Aristo Médica / Primum (preparatorios de medicina, 2019-2021) e clínica de infusão de cetamina (Dr. Jefferson / Dr. Otavio)</li>
-        </ul>
-    </div>
-</div>
-
-<div class="job">
-    <div class="job-header">
-        <span class="job-title">Freelancer — Produção Audiovisual Contínua</span>
-        <span class="job-date">2017 — 2021</span>
-    </div>
-    <div class="job-company">Produção independente — Campinas e região</div>
-    <div class="job-desc">
-        <ul>
-            <li>Produção independente e contínua em Campinas e região</li>
-            <li>Direcao de fotografia, edição e captação para campanhas comerciais e institucionais</li>
-            <li><strong>Em paralelo (2019-2021):</strong> Comunicação institucional para Aristo Médica / Primum (preparatorios de medicina)</li>
-        </ul>
-    </div>
-</div>
-
-<div class="job">
-    <div class="job-header">
-        <span class="job-title">Editor de VT e Direcao de Imagens</span>
-        <span class="job-date">2019 — 2020</span>
-    </div>
-    <div class="job-company">TV Camara Campinas / Rede Familia / Band Campinas</div>
-    <div class="job-desc">
-        <ul>
-            <li>Edição e finalização de matérias, boletins e artes para departamento de Jornalismo</li>
-            <li>Direcao de imagens do Jornal Diario (TV Camara Campinas)</li>
-            <li>Montagem e finalização de programas eleitorais (Band — Eleições 2020)</li>
-            <li>Criacao de pacotes graficos, vinhetas e arte</li>
-        </ul>
-    </div>
-</div>
-
-<div class="job">
-    <div class="job-header">
-        <span class="job-title">Editor de VT e Direcao de Imagens</span>
-        <span class="job-date">2012 — 2017</span>
-    </div>
-    <div class="job-company">TV PUC Campinas</div>
-    <div class="job-desc">
-        <ul>
-            <li>Edição e finalização de matérias, boletins, artes e programas</li>
-            <li>Direcao de imagens e coordenação de equipe de cinegrafistas</li>
-            <li>Desenvolvimento de esquemas luminotecnicos</li>
-            <li>Elaboracao de formatos e narrativas audiovisuais</li>
-        </ul>
-    </div>
-</div>
-
-<div class="job">
-    <div class="job-header">
-        <span class="job-title">Cinegrafista / Editor / Diretor de Imagens</span>
-        <span class="job-date">2011 — 2012</span>
-    </div>
-    <div class="job-company">TV Século XXI — Valinhos, SP — Núcleo EAD</div>
-    <div class="job-desc">
-        <ul>
-            <li>Gravação de audio e video em internas e externas para educação a distancia</li>
-            <li>Produção de cenário, locação e iluminação</li>
-            <li>Edição e finalização de programas educacionais</li>
-        </ul>
-    </div>
-</div>
-
-<div class="job">
-    <div class="job-header">
-        <span class="job-title">Diretor de Fotografia</span>
-        <span class="job-date">2010</span>
-    </div>
-    <div class="job-company">Belas Artes — Campinas, SP</div>
-    <div class="job-desc">
-        <ul>
-            <li>Montagem de estúdios antigos e novos</li>
-            <li>Grade institucional e promoção de trabalhos acadêmicos</li>
-            <li>Direcao de fotografia para campanhas comerciais</li>
-        </ul>
-    </div>
-</div>
-
-<div class="job">
-    <div class="job-header">
-        <span class="job-title">Editor de Pos-Produção — Campanha Presidencial</span>
-        <span class="job-date">2010 (jul — dez)</span>
-    </div>
-    <div class="job-company">Traço Livre Comunicação — São Paulo, SP</div>
-    <div class="job-desc">
-        <ul>
-            <li>Recepcao de material gravado e ou gerado</li>
-            <li>Edição e finalização de matérias, boletins, artes e programas eleitorais</li>
-            <li>Montagem e finalização de pecas publicitarias</li>
-            <li>Candidato: <strong>Plinio Arruda Sampaio</strong> (PSOL) — Eleições Presidenciais 2010</li>
-        </ul>
-    </div>
-</div>
-
-<div class="job">
-    <div class="job-header">
-        <span class="job-title">Produtor — Programa Lado H</span>
-        <span class="job-date">2010 — 2011</span>
-    </div>
-    <div class="job-company">MZ Filmes / Fashion TV — São Paulo, SP</div>
-    <div class="job-desc">
-        <ul>
-            <li>3 temporadas do programa <strong>Lado H</strong>, apresentado por Gastao Moreira (ex-MTV)</li>
-            <li>Responsavel por todas as etapas de produção: orçamento, pauta, personagens, locação, infraestrutura, equipe, equipamentos, pos-produção e finalização</li>
-        </ul>
-    </div>
-</div>
-
-<div class="job">
-    <div class="job-header">
-        <span class="job-title">Editor de Jornalismo</span>
-        <span class="job-date">2008 — 2010</span>
-    </div>
-    <div class="job-company">TV Costa Norte / TV Mais — Campinas, SP</div>
-    <div class="job-desc">
-        <ul>
-            <li>Duas gestões em emissora regional</li>
-        </ul>
-    </div>
-</div>
-
-<div class="job">
-    <div class="job-header">
-        <span class="job-title">Editor de Jornalismo e Direcao de Imagens — Rede Empresa</span>
-        <span class="job-date">2003 — 2008</span>
-    </div>
-    <div class="job-company">TV PUC / TV Cultura — Campinas, SP</div>
-    <div class="job-desc">
-        <ul>
-            <li><strong>Ingresso via projeto de Comunicação Interna da Bosch Campinas</strong> em convenio empresa-universidade</li>
-            <li><strong>Departamento Rede Empresa (TV Cultura):</strong> braco institucional da emissora pública, prestador de servico para órgãos públicos federais</li>
-            <li><strong>TV Escola</strong> e teleconferências para o <strong>SEBRAE-SP</strong> (unidade Vergueiro), projetos para a <strong>Secretaria da Educação de São Paulo</strong> (gestão Gabriel Chalita) e produção para a <strong>TJOFRAN</strong> (terceirizadora de grandes servicos públicos)</li>
-            <li><strong>Cobertura da primeira visita presidencial de Lula a fabrica da Ford</strong> (29/05/2003, São Bernardo do Campo) para o programa <strong>Fome Zero</strong> — 225 toneladas de alimentos, 9 carretas para o Nordeste. Transmissao via satélite para Brasília quando a RadioBras nao conseguia deslocar equipamentos</li>
-            <li>TV Camara Campinas: atendimento aos vereadores, administração pública, comunidade, terceiro setor, indústria, habitação</li>
-            <li>Operação técnica de transmissao ao vivo, iluminação cenica e direcao de fotografia</li>
-            <li><strong>Finalista do Prêmio de Jornalismo FEAC — categoria cinegrafista</strong></li>
-        </ul>
-    </div>
-</div>
-
-<div class="job">
-    <div class="job-header">
-        <span class="job-title">Auxiliar — Laboratórios de Rádio e TV</span>
-        <span class="job-date">2001 — 2003</span>
-    </div>
-    <div class="job-company">Faculdades Oswaldo Cruz — São Paulo, SP</div>
-    <div class="job-desc">
-        <ul>
-            <li>Auxílio em demanda institutional e academica do núcleo</li>
-            <li>Montagem e operação de estúdios</li>
-        </ul>
-    </div>
-</div>
-
-<h2>Formacao Academica</h2>
-<div class="job">
-    <div class="job-header">
-        <span class="job-title">Bacharelado em Comunicação Social — Habilitação em Rádio e Televisão</span>
-        <span class="job-date">2003</span>
-    </div>
-    <div class="job-company">Faculdades Oswaldo Cruz — São Paulo, SP</div>
-</div>
+<h2>Formação Acadêmica</h2>
+<div class="job"><div class="job-header"><span class="job-title">Bacharelado em Comunicação Social – Rádio e TV</span><span class="job-date">2003</span></div><div class="job-company">Faculdades Oswaldo Cruz – SP</div></div>
 
 <h2>Certificações</h2>
-<div class="job-desc">
-    <ul>
-        <li>Ciência de Dados — IE University (1º semestre de 2026)</li>
-        <li>Marketing de Conteúdo — Rock University</li>
-        <li>Copywriting — Rock University</li>
-        <li>Análise de Negócios e Pesquisa de Mercado — SEBRAE</li>
-        <li>Marketing Digital para o Empreendedor — SEBRAE</li>
-    </ul>
-</div>
+<ul><li>Ciência de Dados – IE University (2026)</li><li>Marketing de Conteúdo, Copywriting – Rock University</li><li>Análise de Negócios, Marketing Digital – SEBRAE</li></ul>
 
 <h2>Competências Técnicas</h2>
-<div class="skills-grid">
-    <div>
-        <strong>Produção Audiovisual</strong><br>
-        Edição final, motion graphics, direcao de fotografia, captação, finalização para broadcast e digital
-    </div>
-    <div>
-        <strong>Broadcast & TV</strong><br>
-        Operação de matrizes digitais, mesas DMX, controle de transmissao ao vivo, estúdios de gravação
-    </div>
-    <div>
-        <strong>Software</strong><br>
-        DaVinci Resolve, Avid, Final Cut Pro, After Effects, Premiere, Pro Tools, OBS Studio, Wirecast, Tricaster
-    </div>
-    <div>
-        <strong>Automacao Local</strong><br>
-        Python, Whisper (transcrição), FFmpeg, pipelines de processamento de mídia, infraestrutura on-premise
-    </div>
-</div>
+<div class="skills-grid"><div><strong>Adobe & Design</strong><br>Photoshop, Illustrator, InDesign, After Effects, Premiere</div><div><strong>Edição</strong><br>DaVinci Resolve, Final Cut, Avid</div><div><strong>Automação</strong><br>Python, Whisper, FFmpeg, Remotion, Ollama</div><div><strong>Broadcast</strong><br>Operação de câmera, iluminação DMX, transmissão ao vivo</div></div>
 
-<h2 style="margin-top: 1.5rem;">Informações Complementares</h2>
-<div class="job-desc">
-    <ul>
-        <li>Disponibilidade para inicio imediato</li>
-        <li>Localização: Campinas, SP — proximo ao CNPEM</li>
-        <li>Portfólio: marcelopuschnick.github.io</li>
-        <li>Repositório tecnico: github.com/marcelopuschnick</li>
-    </ul>
-</div>
-
-<div class="no-print">
-    <p>Para salvar como PDF: pressione Ctrl+P (ou Cmd+P) e selecione "Salvar como PDF".</p>
-    <button onclick="window.print()">Imprimir / Salvar PDF</button>
-</div>
-
+<div class="no-print"><button onclick="window.print()">💾 Salvar / Imprimir PDF</button></div>
 </body>
 </html>
