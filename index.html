@@ -3,227 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcelo Puschnick — Conteúdo que Viraliza</title>
-    <meta name="description" content="Meus clientes têm vídeos com milhões de visualizações. Produzo, dirijo e edito conteúdo que constrói autoridade e engaja de verdade.">
+    <title>Marcelo Henrique Puschnick — Editor de Vídeo e Pós-produção</title>
+    <meta name="description" content="Editor de VT, direção de imagens e pós-produção. 23 anos de audiovisual em TV PUC, TV Cultura, TV Câmara e Band Campinas. Automação com IA local.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .result-highlight {
-            background: linear-gradient(135deg, rgba(212,165,116,0.08) 0%, rgba(212,165,116,0.02) 100%);
-            border: 1px solid rgba(212,165,116,0.2);
-            border-radius: 12px;
-            padding: 2rem;
-            margin: 2rem 0;
+        .kicker {
+            font-family: var(--font-mono); font-size: .76rem; letter-spacing: .12em;
+            text-transform: uppercase; color: var(--accent);
         }
-        .result-highlight .number {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--accent);
+        .stat-row {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 1.4rem; text-align: center; background: var(--surface);
+            border: 1px solid var(--border); border-radius: 12px;
+            padding: 1.7rem 1.2rem; margin: 2rem 0;
         }
-        .video-proof {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin: 1.5rem 0;
-        }
-        .video-proof-item {
-            background: var(--bg);
-            padding: 1rem;
-            border-radius: 8px;
-            text-align: center;
-            border: 1px solid rgba(212,165,116,0.1);
-        }
-        .video-proof-item .views {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--accent);
-        }
-        .video-proof-item .label {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-        }
-        .pill {
-            display: inline-block;
-            background: rgba(212,165,116,0.12);
-            color: var(--accent);
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 500;
-            letter-spacing: 0.3px;
-        }
+        .stat-row .n { font-size: 1.95rem; font-weight: 700; color: var(--accent); font-family: var(--font-mono); line-height: 1.1; }
+        .stat-row .l { font-size: .78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: .06em; margin-top: .3rem; }
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo">MP<span>.</span></a>
-            <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('nav-open')" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Início</a></li>
-                <li><a href="sobre.html">Trajetória</a></li>
-                <li><a href="projetos.html">Cases</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
+
+<nav class="navbar">
+    <div class="container">
+        <a href="index.html" class="logo">MP<span>.</span></a>
+        <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('nav-open')" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Início</a></li>
+            <li><a href="sobre.html">Trajetória</a></li>
+            <li><a href="projetos.html">Trabalhos</a></li>
+            <li><a href="curriculo.html">Currículo</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ==================== APRESENTACAO ==================== -->
+<section class="section" style="padding-top: 7rem; padding-bottom: 2rem;">
+    <div class="container" style="max-width: 800px; text-align: center;">
+        <img src="assets/profile_photo.jpg" alt="Marcelo Henrique Puschnick"
+             style="width: 132px; height: 132px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent); box-shadow: 0 0 30px rgba(212,165,116,.22); margin: 0 auto 1.4rem; display: block;">
+
+        <span class="kicker">Campinas, SP · 23 anos de audiovisual</span>
+
+        <h1 style="font-size: 2.3rem; line-height: 1.2; margin: 1rem 0 .9rem;">
+            Marcelo Henrique Puschnick
+        </h1>
+
+        <p style="font-size: 1.12rem; line-height: 1.7; max-width: 660px; margin: 0 auto;">
+            <strong style="color: var(--text);">Editor de VT, direção de imagens e pós-produção.</strong>
+            Passei por TV PUC, TV Cultura, TV Câmara e Band Campinas, e hoje trabalho na Mariuzzo Mídia — na
+            equipe de projetos ligados ao Chitãozinho &amp; Xororó e ao César Urnhani. Nos últimos anos
+            acrescentei automação com IA rodando local.
+        </p>
+
+        <div class="hero-cta" style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top: 1.8rem;">
+            <a href="projetos.html" class="btn btn-primary">Ver trabalhos →</a>
+            <a href="curriculo.html" class="btn btn-secondary">Currículo</a>
         </div>
-    </nav>
+    </div>
+</section>
 
-    <section class="hero">
-        <div class="hero-content animate-on-scroll">
-            <img src="assets/profile_photo.png" alt="Marcelo Puschnick" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent); box-shadow: 0 0 30px rgba(212, 165, 116, 0.25); margin: 0 auto 1.5rem; display: block;">
-            
-            <span class="hero-badge">🎯 Resultado comprovado · Não é sorte</span>
-            
-            <h1 style="font-size: 2.2rem; line-height: 1.2;">
-                Meus clientes têm vídeos<br>
-                <span style="color: var(--accent);">com milhões de visualizações</span>
-            </h1>
-            
-            <p style="font-size: 1.1rem; color: var(--text-muted); margin: 1rem 0 0.5rem;">
-                Produzo, dirijo e edito conteúdo que entrega resultado consistente.<br>
-                <span style="color: var(--accent);">Não é sorte. É método, narrativa e direção.</span>
-            </p>
-
-            <div class="result-highlight">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1.5rem; text-align: center;">
-                    <div>
-                        <div class="number">23</div>
-                        <div style="font-size: 0.85rem; color: var(--text-muted);">anos de broadcast</div>
-                    </div>
-                    <div>
-                        <div class="number">3.071</div>
-                        <div style="font-size: 0.85rem; color: var(--text-muted);">peças publicadas</div>
-                    </div>
-                    <div>
-                        <div class="number">1,2M</div>
-                        <div style="font-size: 0.85rem; color: var(--text-muted);">base construída</div>
-                    </div>
-                    <div>
-                        <div class="number">+1M</div>
-                        <div style="font-size: 0.85rem; color: var(--text-muted);">views em vídeos</div>
-                    </div>
-                </div>
+<!-- ==================== NUMEROS ==================== -->
+<section class="section" style="padding-top: 1rem;">
+    <div class="container" style="max-width: 800px;">
+        <div class="stat-row">
+            <div>
+                <div class="n">23</div>
+                <div class="l">anos de audiovisual</div>
             </div>
-
-            <div class="video-proof">
-                <div class="video-proof-item">
-                    <div class="views">+1.000.000</div>
-                    <div class="label">📱 Vídeo 1</div>
-                </div>
-                <div class="video-proof-item">
-                    <div class="views">+1.000.000</div>
-                    <div class="label">📱 Vídeo 2</div>
-                </div>
-                <div class="video-proof-item">
-                    <div class="views">+1.000.000</div>
-                    <div class="label">📱 Vídeo 3</div>
-                </div>
+            <div>
+                <div class="n">3.071</div>
+                <div class="l">peças em pós-produção</div>
             </div>
-
-            <div style="margin: 1.5rem 0;">
-                <span class="pill">📌 Diferencial: meus vídeos rendem mais</span>
-                <span class="pill" style="margin-left: 0.5rem;">🔒 LGPD compliance</span>
-                <span class="pill" style="margin-left: 0.5rem;">⚡ Automação local</span>
+            <div>
+                <div class="n">4</div>
+                <div class="l">emissoras de TV</div>
             </div>
-
-            <div class="hero-actions" style="margin-top: 1.5rem;">
-                <a href="#metodo" class="btn btn-primary">Como eu faço</a>
-                <a href="projetos.html" class="btn btn-secondary">Ver resultados →</a>
+            <div>
+                <div class="n">7</div>
+                <div class="l">anos na TV PUC</div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="metodo" class="section animate-on-scroll">
-        <div class="container">
-            <div class="section-header">
-                <h2>O que meus clientes dizem</h2>
-                <p>Resultado consistente, não promessa</p>
+<!-- ==================== O QUE EU FACO ==================== -->
+<section class="section" style="background: var(--surface);">
+    <div class="container" style="max-width: 900px;">
+        <div class="section-header">
+            <h2>O que eu faço</h2>
+            <p>Da captação até a entrega final — e o que existe entre as duas pontas.</p>
+        </div>
+
+        <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+            <div class="card">
+                <div style="font-size: 1.8rem; margin-bottom: .5rem;">🎬</div>
+                <h3>Edição e finalização</h3>
+                <p>Seleção, corte, montagem, sincronização e finalização de imagem e áudio. Ajuste de cor e de
+                   som, legendas e exportação em múltiplos formatos. Premiere, After Effects e DaVinci Resolve.</p>
             </div>
+            <div class="card">
+                <div style="font-size: 1.8rem; margin-bottom: .5rem;">📹</div>
+                <h3>Direção de imagens e operação</h3>
+                <p>Operação de câmera, iluminação DMX, transmissão ao vivo e pacotes gráficos. Direção de
+                   imagens em regime ao vivo e coordenação de equipe de cinegrafistas.</p>
+            </div>
+            <div class="card">
+                <div style="font-size: 1.8rem; margin-bottom: .5rem;">🗂️</div>
+                <h3>Pós-produção em escala</h3>
+                <p>Organização e gestão de acervo e mídias digitais, padronização de entregas e produção em
+                   lote — com o fluxo documentado para não depender de uma pessoa só.</p>
+            </div>
+            <div class="card">
+                <div style="font-size: 1.8rem; margin-bottom: .5rem;">🤖</div>
+                <h3>Automação e IA local</h3>
+                <p>Pipelines próprios em Python: transcrição automática (Whisper), extração de mapa de montagem
+                   por modelo local e exportação para o Resolve em EDL/OTIO. Tudo offline, LGPD por desenho.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-            <div style="max-width: 700px; margin: 0 auto;">
-                <div style="background: var(--surface); padding: 2rem; border-radius: 12px; border-left: 4px solid var(--accent); margin-bottom: 1.5rem;">
-                    <p style="font-style: italic; color: var(--text-muted);">
-                        "Os vídeos que o Marcelo produz rendem consistentemente mais do que os que fazemos sozinhos. Não é uma vez, é sempre."
-                    </p>
-                    <p style="font-weight: 600; margin-top: 0.5rem;">— Cliente com 100k+ seguidores</p>
+<!-- ==================== TRAJETORIA RESUMIDA ==================== -->
+<section class="section">
+    <div class="container" style="max-width: 780px;">
+        <span class="kicker">Trajetória</span>
+        <h2 style="font-size: 1.6rem; margin: .7rem 0 1.2rem;">Onde eu trabalhei</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2021 — presente</div>
+                <div class="timeline-title">Produção de Conteúdo Institucional</div>
+                <div class="timeline-company">Mariuzzo Mídia — Campinas, SP</div>
+                <div class="timeline-desc">
+                    Produção e pós-produção para clientes da agência: UPL, Mercado Livre, Sherwin-Williams,
+                    3M e Henkel. Equipe de projetos ligados ao Chitãozinho &amp; Xororó e ao César Urnhani.
                 </div>
-                <div style="background: var(--surface); padding: 2rem; border-radius: 12px; border-left: 4px solid var(--accent);">
-                    <p style="font-style: italic; color: var(--text-muted);">
-                        "Saímos do zero para centenas de milhares de seguidores. O conteúdo do Marcelo não é só bonito — ele entrega resultado."
-                    </p>
-                    <p style="font-weight: 600; margin-top: 0.5rem;">— Especialista com 3 vídeos viralizados</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2019 — 2020</div>
+                <div class="timeline-title">Editor de VT e Direção de Imagens</div>
+                <div class="timeline-company">TV Câmara Campinas / Band Campinas</div>
+                <div class="timeline-desc">
+                    Direção de imagens do <em>Jornal Diário</em> e montagem dos programas eleitorais de 2020.
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2003 — 2017</div>
+                <div class="timeline-title">Editor de VT, Direção de Imagens e Comunicação Interna</div>
+                <div class="timeline-company">TV PUC Campinas / TV Cultura (Rede Empresa)</div>
+                <div class="timeline-desc">
+                    Projetos institucionais para Bosch, SEBRAE-SP e Secretaria da Educação.
+                    Edição, direção de imagens, luminotécnica e coordenação de equipe de cinegrafistas.
                 </div>
             </div>
         </div>
-    </section>
 
-    <section class="section" style="background: var(--surface);">
-        <div class="container" style="max-width: 800px;">
-            <div class="section-header">
-                <h2>O que entrego</h2>
-                <p>Conteúdo que constrói autoridade e engaja de verdade</p>
-            </div>
+        <p style="margin-top: 1.5rem;">
+            <a href="sobre.html" style="font-weight: 600;">Trajetória completa →</a>
+        </p>
+    </div>
+</section>
 
-            <div class="card-grid" style="grid-template-columns: 1fr 1fr;">
-                <div class="card">
-                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎬</div>
-                    <h3>Produção completa</h3>
-                    <p>Gravação, direção e edição com qualidade broadcast. Mais de 23 anos de experiência em TV e conteúdo institucional.</p>
-                </div>
-                <div class="card">
-                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🧠</div>
-                    <h3>Narrativa que engaja</h3>
-                    <p>Conteúdo pensado na dor do público, não no ego do cliente. É por isso que meus vídeos viralizam.</p>
-                </div>
-                <div class="card">
-                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">📈</div>
-                    <h3>Resultado previsível</h3>
-                    <p>Padrão comprovado: meus clientes crescem. Não é uma vez, é sempre. Posso mostrar os números.</p>
-                </div>
-                <div class="card">
-                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🤖</div>
-                    <h3>Tecnologia a favor</h3>
-                    <p>Automação local com Python, IA e LGPD. Mais eficiência, menos custo, mais resultado.</p>
-                </div>
-            </div>
+<!-- ==================== CONTATO ==================== -->
+<section class="section" style="background: var(--surface);">
+    <div class="container" style="max-width: 700px; text-align: center;">
+        <h2 style="margin-bottom: 1rem;">Contato</h2>
+        <p style="margin-bottom: 1.8rem;">
+            Campinas, SP · (19) 99946-2258 ·
+            <a href="mailto:marcelo_puschnick@icloud.com">marcelo_puschnick@icloud.com</a>
+        </p>
+        <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+            <a href="contato.html" class="btn btn-primary">Falar comigo</a>
+            <a href="https://github.com/marcelopuschnick" class="btn btn-secondary">GitHub</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="section animate-on-scroll">
-        <div class="container" style="max-width: 700px; text-align: center;">
-            <h2 style="margin-bottom: 1rem;">Quer que seus vídeos rendam mais?</h2>
-            <p style="color: var(--text-muted); margin-bottom: 2rem;">
-                Não é sorte. É método.<br>
-                Vamos conversar sobre como posso aplicar o que aprendi em 23 anos para você.
-            </p>
-            <a href="contato.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 0.75rem 2.5rem;">Agendar conversa →</a>
+<footer class="footer">
+    <div class="container">
+        <p><strong>Marcelo Henrique Puschnick</strong> — Editor de VT e Direção de Imagens</p>
+        <p>Campinas, SP — Brasil</p>
+        <div class="footer-links">
+            <a href="sobre.html">Trajetória</a>
+            <a href="projetos.html">Trabalhos</a>
+            <a href="curriculo.html">Currículo</a>
+            <a href="contato.html">Contato</a>
         </div>
-    </section>
+        <p style="margin-top: 1.5rem; font-size: .75rem; color: #666;">&copy; 2026 Marcelo Henrique Puschnick</p>
+    </div>
+</footer>
 
-    <footer class="footer">
-        <div class="container">
-            <p><strong>Marcelo Puschnick</strong> — Conteúdo que viraliza</p>
-            <p>Campinas, SP — Brasil</p>
-            <div class="footer-links">
-                <a href="sobre.html">Trajetória</a>
-                <a href="projetos.html">Cases</a>
-                <a href="contato.html">Contato</a>
-            </div>
-            <p style="margin-top: 1.5rem; font-size: 0.75rem; color: #666;">&copy; 2026 Marcelo Puschnick. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) { entry.target.classList.add('is-visible'); }
-            });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
-    </script>
+<script>
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) entry.target.classList.add('is-visible');
+        });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.animate-on-scroll').forEach(function (el) { observer.observe(el); });
+</script>
 </body>
 </html>
