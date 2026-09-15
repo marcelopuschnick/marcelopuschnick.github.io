@@ -6,12 +6,19 @@
     <title>Currículo — Marcelo Henrique Puschnick</title>
     <meta name="description" content="Currículo de Marcelo Henrique Puschnick — editor de VT, direção de imagens, pós-produção e iluminação cênica. 23 anos de audiovisual.">
     <style>
-        @media print { body { margin: 0; padding: 0; } .no-print { display: none; } }
+        /* margens de impressao enxutas: ganham ~30% de area util sem perder legibilidade */
+        @page { size: A4; margin: 11mm 13mm 10mm 13mm; }
+        @media print {
+            body { margin: 0; padding: 0; font-size: 9.4pt; line-height: 1.36; }
+            .no-print { display: none; }
+            .job { margin-bottom: .45rem; }
+            h2 { margin: .6rem 0 .3rem; }
+        }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Inter', -apple-system, 'Segoe UI', Arial, sans-serif;
-            font-size: 10pt;
-            line-height: 1.42;
+            font-size: 9.6pt;
+            line-height: 1.38;
             color: #222;
             background: #fff;
             padding: 1.6rem;
@@ -58,7 +65,7 @@
 <div class="header-line"></div>
 
 <h2>Resumo profissional</h2>
-<p>Profissional de produção audiovisual e comunicação institucional, com 23 anos de atuação em emissoras de televisão, produtoras e agência. Graduado em Comunicação Social com habilitação em Rádio e TV pela Oswaldo Cruz (2003). Atua em todas as etapas do processo: roteirização e levantamento de pauta, captação e cobertura de eventos, edição, finalização, correção de cor e som, criação de vinhetas e pacotes gráficos, motion graphics e iluminação — com operação de mesas de controle DMX-512. Produziu comunicação interna e conteúdo institucional para a Bosch Campinas dentro da TV PUC, além de projetos para SEBRAE-SP, Secretaria da Educação e TJFRAN. Coordena pós-produção em escala e desenvolve automação local com Python.</p>
+<p>Profissional de produção audiovisual e comunicação institucional, com 23 anos em emissoras de televisão, produtoras e agência. Graduado em Comunicação Social — Rádio e TV pela Oswaldo Cruz (2003). Atua em todas as etapas: roteirização e pauta, captação e cobertura de eventos, edição, finalização, correção de cor e som, vinhetas e pacotes gráficos, motion graphics e iluminação (mesas DMX-512). Produziu comunicação interna e conteúdo institucional para a <strong>Bosch Campinas</strong>, dentro da TV PUC, além de projetos para SEBRAE-SP, Secretaria da Educação e TJFRAN. Coordena pós-produção em escala e desenvolve automação local com Python.</p>
 
 <h2>Experiência profissional</h2>
 
@@ -66,10 +73,10 @@
     <div class="job-header"><span class="job-title">Produção e Pós-produção de Conteúdo Institucional</span><span class="job-date">2021 – atual</span></div>
     <div class="job-company">Mariuzzo Mídia — Campinas, SP</div>
     <div class="job-desc"><ul>
-        <li>Produção e pós-produção de conteúdo para clientes da agência: UPL, Mercado Livre, Sherwin-Williams, 3M e Henkel.</li>
-        <li>Roteirização, captação, edição e finalização; correção de cor, sonorização, legendas e exportação em múltiplos formatos.</li>
-        <li>Criação de pacotes gráficos, vinhetas e peças de comunicação visual.</li>
-        <li>Coordenação de pós-produção em escala: 3.071 peças finalizadas. Organização de acervo, cronogramas e fluxos de produção.</li>
+        <li>Produção e pós-produção para clientes da agência: UPL, Mercado Livre, Sherwin-Williams, 3M e Henkel.</li>
+        <li>Roteirização, captação, edição e finalização; correção de cor, som, legendas e exportação em múltiplos formatos.</li>
+        <li>Pacotes gráficos, vinhetas e peças de comunicação visual.</li>
+        <li>Coordenação de pós-produção em escala (3.071 peças); acervo, cronogramas e fluxos de produção.</li>
         <li>Automação local com Python (Whisper, FFmpeg, Remotion), com conformidade LGPD.</li>
     </ul></div>
 </div>
@@ -110,11 +117,10 @@
     <div class="job-header"><span class="job-title">Editor de VT, Direção de Imagens e Iluminação</span><span class="job-date">04/2012 – 09/2017</span></div>
     <div class="job-company">PUC-Campinas — TV PUC Campinas · Comunicação interna para a Bosch Campinas</div>
     <div class="job-desc"><ul>
-        <li>Recepção de material gravado e/ou gerado; edição e finalização de matérias, boletins e artes.</li>
-        <li>Montagem e finalização de programas; criação de pacotes gráficos, vinhetas e arte.</li>
-        <li>Direção de imagens e coordenação de equipe de cinegrafistas.</li>
-        <li>Desenvolvimento de esquemas luminotécnicos.</li>
+        <li>Edição e finalização de matérias, boletins e artes; montagem de programas; pacotes gráficos, vinhetas e arte.</li>
+        <li>Direção de imagens e coordenação de equipe de cinegrafistas; esquemas luminotécnicos.</li>
         <li>Elaboração de formatos e narrativas audiovisuais.</li>
+        <li><strong>Produção de comunicação interna para a Bosch Campinas.</strong></li>
     </ul></div>
 </div>
 
@@ -147,6 +153,28 @@
     </ul></div>
 </div>
 
+<h2>Projetos</h2>
+
+<div class="job">
+    <div class="job-header"><span class="job-title">Série documental — Genesis Experience</span><span class="job-date">72 episódios</span></div>
+    <div class="job-company">Canal Bora Pro Lago · YouTube · Igreja da Lagoinha</div>
+    <div class="job-desc"><ul>
+        <li>Série documental sobre a construção do maior lago de batismo do mundo, com acompanhamento de obra e transmissões ao vivo.</li>
+        <li><strong>Responsável pela captação</strong>, coordenando a equipe de cinegrafistas.</li>
+        <li>Ingest e organização do material bruto; <strong>roteirização e montagem</strong> dos episódios.</li>
+    </ul></div>
+</div>
+
+<div class="job">
+    <div class="job-header"><span class="job-title">Cobertura em tempo real — Hospital do Amor</span><span class="job-date">Ação social</span></div>
+    <div class="job-company">Cobertura para Instagram · produção imersiva</div>
+    <div class="job-desc"><ul>
+        <li>Reality show imersivo: 3.000 m² de barro em lago biológico, construído em 10 dias.</li>
+        <li>Cobertura em tempo real para o Instagram durante toda a ação.</li>
+        <li>Lives diárias com 3 câmeras e mais de 50 peças verticais publicadas.</li>
+    </ul></div>
+</div>
+
 <h2>Formação acadêmica</h2>
 <div class="job">
     <div class="job-header"><span class="job-title">Bacharelado em Comunicação Social — Habilitação em Rádio e Televisão</span><span class="job-date">12/2003</span></div>
@@ -169,13 +197,11 @@
 <h2>Competências</h2>
 <div class="skills-grid">
     <div><strong>Edição e finalização</strong><br>DaVinci Resolve, Avid, Final Cut Pro, Sony Vegas, pacote Adobe (Premiere, After Effects, Photoshop, Illustrator, InDesign)</div>
-    <div><strong>Áudio</strong><br>Audacity, Ardour, Logic Audio, Reaper</div>
-    <div><strong>Transmissão ao vivo</strong><br>OBS Studio, Wirecast, Tricaster</div>
-    <div><strong>Iluminação</strong><br>Mesas de controle DMX-512, esquemas luminotécnicos, iluminação cênica</div>
-    <div><strong>Operação</strong><br>Câmera, movimentação de câmera, áudio, produção de campo</div>
-    <div><strong>Motion graphics e arte</strong><br>Pacotes gráficos, vinhetas, aberturas, arte, correção de cor e sonorização (After Effects, Photoshop, Illustrator)</div>
+    <div><strong>Áudio e transmissão</strong><br>Audacity, Ardour, Logic Audio, Reaper · OBS Studio, Wirecast, Tricaster</div>
+    <div><strong>Iluminação e operação</strong><br>Mesas DMX-512, esquemas luminotécnicos, iluminação cênica · câmera e movimentação de câmera</div>
+    <div><strong>Motion graphics e arte</strong><br>Pacotes gráficos, vinhetas, aberturas, correção de cor e sonorização (After Effects, Photoshop, Illustrator)</div>
     <div><strong>Automação e IA local</strong><br>Python, Whisper, Ollama, FFmpeg, OpenTimelineIO, Remotion</div>
-    <div><strong>Soft skills</strong><br>Trabalho em equipe, gerenciamento de prazos, adequação de linguagem e narrativa ao objetivo do produto</div>
+    <div><strong>Competências comportamentais</strong><br>Trabalho em equipe, gestão de prazos, adequação de linguagem ao objetivo do produto</div>
 </div>
 
 <div class="no-print">
